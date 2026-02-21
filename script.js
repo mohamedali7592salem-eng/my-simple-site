@@ -1,8 +1,8 @@
 // ====================================================
-// ضع بيانات مشروعك من Supabase هنا
+// بيانات مشروع Supabase (تم التعديل)
 // ====================================================
-const SUPABASE_URL = 'https://XXXXXXXXXXXXX.supabase.co'    // ضع رابط مشروعك
-const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.XXXXXXXXXXXXX' // ضع المفتاح
+const SUPABASE_URL = 'https://drgbswnxnayijqypeqen.supabase.co'  // الرابط الخاص بك
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRyZ2Jzd254bmF5aWpxeXBlcWVuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzE2NzgwNTAsImV4cCI6MjA4NzI1NDA1MH0.xzGBCwZVZ8oluml-Yo_XyrNz0AnEqJA0BMJS_HnPIEk'
 
 // إنشاء اتصال بـ Supabase
 const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
@@ -70,6 +70,3 @@ async function loadPosts() {
 
 // تنفيذ الدالة عند تحميل الصفحة
 document.addEventListener('DOMContentLoaded', loadPosts)
-
-// تحديث البيانات كل 30 ثانية (اختياري)
-// setInterval(loadPosts, 30000)
