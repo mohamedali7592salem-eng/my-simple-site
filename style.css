@@ -1,0 +1,183 @@
+Enter/* التنسيقات الأساسية */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    overflow: hidden;
+    animation: slideIn 0.5s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ترويسة الصفحة */
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 40px 30px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header h1 i {
+    margin-left: 10px;
+}
+
+.subtitle {
+    font-size: 1.1em;
+    opacity: 0.9;
+}
+
+/* المحتوى الرئيسي */
+main {
+    padding: 30px;
+}
+
+/* حاوية المنشورات */
+#posts-container {
+    min-height: 200px;
+}
+
+/* تنسيق كل منشور */
+.post {
+    background: #f8f9fa;
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-right: 5px solid #667eea;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.post:hover {
+    transform: translateX(-5px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+}
+
+.post h3 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.post p {
+    color: #555;
+    font-size: 1.1em;
+    margin: 15px 0;
+    line-height: 1.8;
+}
+
+.post small {
+    display: block;
+    color: #888;
+    font-size: 0.9em;
+    margin-top: 15px;
+    text-align: left;
+    direction: ltr;
+}
+
+.post small i {
+    margin-left: 5px;
+    color: #667eea;
+}
+
+/* حالة التحميل */
+.loading {
+    text-align: center;
+    padding: 50px;
+    color: #666;
+    font-size: 1.2em;
+}
+
+.loading i {
+    color: #667eea;
+    margin-left: 10px;
+}
+
+/* حالة الخطأ */
+.error {
+    text-align: center;
+    padding: 50px;
+    color: #dc3545;
+    background: #f8d7da;
+    border-radius: 10px;
+    font-size: 1.2em;
+}
+
+.error i {
+    margin-left: 10px;
+}
+
+/* حالة عدم وجود بيانات */
+.no-data {
+    text-align: center;
+    padding: 50px;
+    color: #666;
+    background: #f8f9fa;
+    border-radius: 10px;
+    font-size: 1.2em;
+}
+
+.no-data i {
+    color: #667eea;
+    margin-left: 10px;
+}
+
+/* تذييل الصفحة */
+footer {
+    background: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    color: #666;
+    font-size: 0.9em;
+    border-top: 1px solid #ddd;
+}
+
+/* تصميم متجاوب للشاشات الصغيرة */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+    
+    main {
+        padding: 20px;
+    }
+    
+    .post {
+        padding: 15px;
+    }
+    
+    .post h3 {
+        font-size: 1.3em;
+    }
+  }
